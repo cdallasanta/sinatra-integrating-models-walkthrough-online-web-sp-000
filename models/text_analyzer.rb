@@ -11,7 +11,7 @@ class TextAnalyzer
   end
 
   def count_vowels
-    @text.count("/[aeiou]/i")
+    @text.count("/[aeiouAEIOU]/")
   end
 
   def count_consonants
