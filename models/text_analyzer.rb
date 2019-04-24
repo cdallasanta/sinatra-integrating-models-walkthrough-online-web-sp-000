@@ -20,7 +20,7 @@ class TextAnalyzer
 
   def most_common_letter
     letter_hash = {}
-    @text.each do |letter|
+    @text..split("").each do |letter|
       if letter_hash[letter.to_sym]
         letter_hash[letter.to_sym] += 1
       else
