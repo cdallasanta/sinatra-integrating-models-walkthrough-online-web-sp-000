@@ -25,7 +25,7 @@ class TextAnalyzer
       if letter_hash[letter.to_sym]
         letter_hash[letter.to_sym] += 1
       else
-        letter_hash[letter.to_sym] = 0
+        letter_hash[letter.to_sym] = 1
       end
     end
     letter_hash.max_by {|k,v| v}
