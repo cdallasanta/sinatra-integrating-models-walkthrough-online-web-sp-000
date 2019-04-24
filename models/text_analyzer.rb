@@ -21,7 +21,6 @@ class TextAnalyzer
   def most_common_letter
     letter_hash = {}
     @text.split("").each do |letter|
-      binding.pry
       if letter_hash[letter.to_sym]
         letter_hash[letter.to_sym] += 1
       else
