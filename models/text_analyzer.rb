@@ -27,6 +27,7 @@ class TextAnalyzer
         letter_hash[letter.to_sym] = 1
       end
     end
+    binding.pry
     letter_hash.max_by {|k,v| v}
   end
 end
