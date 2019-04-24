@@ -3,7 +3,7 @@ class TextAnalyzer
   attr_accessor :text
 
   def initialize(text)
-    @text = text
+    @text = text.downcase
   end
 
   def count_words
@@ -11,11 +11,11 @@ class TextAnalyzer
   end
 
   def count_vowels
-    @text.count("/[aeiouAEIOU]/")
+    @text.count("/[aeiou]/")
   end
 
   def count_consonants
-    @text.count("/[^aeiou\W]/")
+    @text.count("/[bcdfghjklmnpqrstvwxyz]/")
   end
 
   def most_common_letter
